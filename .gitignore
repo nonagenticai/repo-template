@@ -1,0 +1,16 @@
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+.vscode/
+*.swp
+
+# Local environment — never commit a real one
+.env
+.env.local
+.env.*.local
+
+# Local build output (add the ecosystem's own directory: target/, node_modules/,
+# .venv/, dist/, build/)

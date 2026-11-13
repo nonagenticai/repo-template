@@ -1,0 +1,7 @@
+# Keep the language stats honest: mark generated and vendored trees as such.
+# Adjust the paths to this repository; delete the section if it does not apply.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.pdf binary
