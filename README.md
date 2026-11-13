@@ -16,7 +16,7 @@ to any repository that does not define its own. This template therefore carries 
 |---|---|
 | `LICENSE`, `NOTICE` | Apache-2.0. Fill in `<Project>`/`<year>` in `NOTICE`; keep `LICENSE` verbatim. |
 | `CHANGELOG.md` | Keep a Changelog. The first public release is `0.1.0`. |
-| `.github/dependabot.yml` | Grouped weekly updates. Uncomment the ecosystem(s) the repo uses; delete the rest. |
+| `templates/dependabot.yml` | Copy to `.github/dependabot.yml` in the new repo. Uncomment the ecosystem(s) it uses; delete the rest. It is not live in *this* repository — a template has no manifest, and Dependabot rejects a config with zero ecosystems. |
 | `.github/CODEOWNERS` | Default owner. |
 | `.github/ISSUE_TEMPLATE/`, `.github/PULL_REQUEST_TEMPLATE.md` | Issue templates are **not** inherited from the organisation repo, so copy these in. The PR template here is the same one the organisation supplies. |
 | `.betterleaks.toml`, `.betterleaksignore` | Secret-scan configuration. |

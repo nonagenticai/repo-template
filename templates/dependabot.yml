@@ -1,6 +1,11 @@
-# Grouped weekly dependency updates. Keep ONE ecosystem block per package manager this
-# repository actually uses; delete the rest. Grouping minor/patch keeps the PR count low
-# without hiding a major upgrade, which stays a separate PR on purpose.
+# TEMPLATE ASSET — copy this file to `.github/dependabot.yml` in the generated repository,
+# then keep ONE ecosystem block per package manager that repository actually uses and delete
+# the rest. It is not live here: a template repository has no dependency manifest, so every
+# ecosystem would fail with `dependency_file_not_found`, and Dependabot rejects an empty
+# `updates:` list outright.
+#
+# Grouping minor/patch keeps the PR count low without hiding a major upgrade, which stays a
+# separate PR on purpose.
 version: 2
 updates:
   - package-ecosystem: github-actions
