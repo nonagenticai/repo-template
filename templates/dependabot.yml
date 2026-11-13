@@ -1,0 +1,46 @@
+# TEMPLATE ASSET — copy this file to `.github/dependabot.yml` in the generated repository,
+# then keep ONE ecosystem block per package manager that repository actually uses and delete
+# the rest. It is not live here: a template repository has no dependency manifest, so every
+# ecosystem would fail with `dependency_file_not_found`, and Dependabot rejects an empty
+# `updates:` list outright.
+#
+# Grouping minor/patch keeps the PR count low without hiding a major upgrade, which stays a
+# separate PR on purpose.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 5
+    groups:
+      github-actions:
+        patterns: ["*"]
+
+  # - package-ecosystem: cargo
+  #   directory: /
+  #   schedule: { interval: weekly, day: monday }
+  #   open-pull-requests-limit: 5
+  #   groups:
+  #     cargo:
+  #       patterns: ["*"]
+  #       update-types: ["minor", "patch"]
+  #
+  # - package-ecosystem: uv
+  #   directory: /
+  #   schedule: { interval: weekly, day: monday }
+  #   open-pull-requests-limit: 5
+  #   groups:
+  #     python:
+  #       patterns: ["*"]
+  #       update-types: ["minor", "patch"]
+  #
+  # - package-ecosystem: npm
+  #   directory: /
+  #   schedule: { interval: weekly, day: monday }
+  #   open-pull-requests-limit: 5
+  #   groups:
+  #     npm:
+  #       patterns: ["*"]
+  #       update-types: ["minor", "patch"]
