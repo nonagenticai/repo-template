@@ -6,6 +6,13 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+### Fixed
+
+- `.github/dependabot.yml` no longer declares a package ecosystem in the template itself.
+  A template repository has no workflows, so the `github-actions` block made Dependabot's
+  update job fail on `main` with `dependency_file_not_found`. The blocks are now commented
+  out, to be uncommented in the generated repository.
+
 ## [0.1.0] - <date>
 
 First public release.

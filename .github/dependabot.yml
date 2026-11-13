@@ -1,17 +1,23 @@
 # Grouped weekly dependency updates. Keep ONE ecosystem block per package manager this
 # repository actually uses; delete the rest. Grouping minor/patch keeps the PR count low
 # without hiding a major upgrade, which stays a separate PR on purpose.
+#
+# Every block is commented out in THIS repository on purpose. A template repository has no
+# dependency manifest and no workflows of its own — its CI lives in `templates/ci/`, which is
+# copied, not run — so Dependabot had nothing to resolve and its update job failed on `main`
+# with `dependency_file_not_found`. In the repository GENERATED from this template, uncomment
+# the blocks that match what it actually uses; the first one is almost always github-actions.
 version: 2
-updates:
-  - package-ecosystem: github-actions
-    directory: /
-    schedule:
-      interval: weekly
-      day: monday
-    open-pull-requests-limit: 5
-    groups:
-      github-actions:
-        patterns: ["*"]
+updates: []   # nothing to scan here — uncomment the blocks below in the GENERATED repository
+  # - package-ecosystem: github-actions
+  #   directory: /
+  #   schedule:
+  #     interval: weekly
+  #     day: monday
+  #   open-pull-requests-limit: 5
+  #   groups:
+  #     github-actions:
+  #       patterns: ["*"]
 
   # - package-ecosystem: cargo
   #   directory: /
