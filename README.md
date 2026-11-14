@@ -41,3 +41,15 @@ to any repository that does not define its own. This template therefore carries 
 
 This template is for repositories this organisation owns. Never use it on a fork of
 someone else's project: their security policy, contribution rules and licence are theirs.
+
+## Licensing
+
+The template itself is scaffolding, not a running service: it carries no licence-enforcement
+code, and the Apache-2.0 licence in [`LICENSE`](LICENSE) is the only licence that applies.
+Repositories created from it are Apache-2.0 and must state their own licensing posture in a
+`## Licensing` section — which switch (if any) the code reads, what its default is, and that
+the code runs without a licence server.
+
+## License
+
+Apache-2.0 — see [`LICENSE`](LICENSE) and [`NOTICE`](NOTICE).
