@@ -35,6 +35,10 @@ updates:
   #     python:
   #       patterns: ["*"]
   #       update-types: ["minor", "patch"]
+  #   # ty is a CI tool pinned by nonagenticai/ci-workflows, not a per-repo dependency.
+  #   # Bumping it per repo broke every coding-* CI run (2026-11-13) — keep it out of the queue.
+  #   ignore:
+  #     - dependency-name: ty
   #
   # - package-ecosystem: npm
   #   directory: /
